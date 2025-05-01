@@ -78,7 +78,8 @@ MIT License — see the LICENSE file.
 
 🧠 Acknowledgments
 
-This pipeline builds upon foundational work in model pruning, neural architecture optimization, and deployment for edge AI systems. It integrates insights from recent pruning and dynamic sparsity research.
+This pipeline builds upon foundational work in model pruning, neural architecture optimization, and deployment for edge AI systems.
+It integrates insights from recent pruning and dynamic sparsity research.
 
 ⸻
 
