@@ -1,0 +1,53 @@
+dataset:
+  data_path: data/balance.csv
+  input_features: 4
+  model_dir: models/balance
+  model_path: models/original/tanh/balance
+  name: balance
+  num_classes: 3
+  path: models/original/tanh/balance
+  target_column: class
+export:
+  edge_impulse:
+    enabled: false
+    project_id: 669207
+  enabled: true
+  onnx_dir: models/onnx
+  original_model_dir: models/original
+  pruned_model_dir: models/pruned
+  save_dir: models/pruned/tanh/balance
+inference:
+  batch_size: 32
+  enabled: true
+  output_dir: results/inference/tanh/balance
+model:
+  activation: tanh
+  hidden_neurons: 20
+  input_features: 4
+  model_save_path: models/balance
+output:
+  results_dir: results/balance
+  save_dir: models/pruned/tanh/balance
+pruning:
+  accuracy_drop: 0.05
+  activity_threshold: 0.2
+  correlation_threshold: 0.7
+  enabled: true
+  pruned: false
+  save_dir: models/pruned/tanh/balance
+  sensitivity_threshold: 0.05
+  validation:
+    accuracy_weight: 1.0
+    batch_size: 3
+    max_accuracy_drop: 0.15
+    min_accuracy: 0.8
+    require_min_neurons: 6
+    size_weight: 0.0
+    target_pruning_rate: 0.6
+    validation_strategy: batch
+training:
+  batch_size: 32
+  enabled: true
+  epochs: 1000
+  learning_rate: 0.001
+  save_dir: models/original/tanh/balance

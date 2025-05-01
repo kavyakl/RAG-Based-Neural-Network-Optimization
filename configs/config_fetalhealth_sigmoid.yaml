@@ -1,0 +1,54 @@
+dataset:
+  data_path: data/fetalhealth.csv
+  input_features: 21
+  model_dir: models/fetalhealth
+  model_path: models/original/sigmoid/fetalhealth
+  name: fetalhealth
+  num_classes: 3
+  path: models/original/sigmoid/fetalhealth
+  target_column: fetal_health
+export:
+  edge_impulse:
+    enabled: false
+    project_id: 669207
+  enabled: true
+  onnx_dir: models/onnx
+  original_model_dir: models/original
+  pruned_model_dir: models/pruned
+  save_dir: models/pruned/sigmoid/fetalhealth
+inference:
+  batch_size: 32
+  enabled: true
+  output_dir: results/inference/sigmoid/fetalhealth
+model:
+  activation: sigmoid
+  hidden_neurons: 42
+  input_features: 21
+  model_save_path: models/fetalhealth
+output:
+  results_dir: results/fetalhealth
+  save_dir: models/pruned/sigmoid/fetalhealth
+pruning:
+  accuracy_drop: 0.05
+  activity_threshold: 0.1
+  correlation_threshold: 0.8
+  enabled: true
+  pruned: false
+  save_dir: models/pruned/sigmoid/fetalhealth
+  sensitivity_threshold: 0.01
+  validation:
+    accuracy_weight: 1.0
+    batch_size: 3
+    max_accuracy_drop: 0.05
+    max_neurons_pruned: 8
+    min_accuracy: 0.85
+    require_min_neurons: 6
+    size_weight: 0.0
+    target_pruning_rate: 0.6
+    validation_strategy: batch
+training:
+  batch_size: 32
+  enabled: true
+  epochs: 1000
+  learning_rate: 0.001
+  save_dir: models/original/sigmoid/fetalhealth

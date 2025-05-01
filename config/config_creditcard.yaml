@@ -1,0 +1,52 @@
+dataset:
+  input_features: 23
+  name: creditcard
+  num_classes: 2
+  data_path: data/creditcard.csv
+  target_column: Y
+
+model:
+  activation: relu
+  hidden_neurons: 32
+  base_dir: models/creditcard/relu
+  
+training:
+  batch_size: 32
+  enabled: true
+  epochs: 1000
+  learning_rate: 0.001
+  save_dir: models/creditcard/relu/original
+
+inference:
+  batch_size: 32
+  enabled: true
+  output_dir: results/creditcard/relu/inference
+
+pruning:
+  enabled: true
+  pruned: false
+  accuracy_drop: 0.05
+  activity_threshold: 0.1
+  correlation_threshold: 0.8
+  sensitivity_threshold: 0.01
+  save_dir: models/creditcard/relu/pruned
+  validation:
+    accuracy_weight: 1.0
+    batch_size: 3
+    max_accuracy_drop: 0.05
+    max_neurons_pruned: 8
+    min_accuracy: 0.85
+    require_min_neurons: 6
+    size_weight: 0.0
+    target_pruning_rate: 0.6
+    validation_strategy: batch
+
+export:
+  enabled: false
+  edge_impulse:
+    enabled: false
+    project_id: 669207
+  onnx_dir: models/creditcard/relu/onnx
+
+output:
+  results_dir: results/creditcard/relu 

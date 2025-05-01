@@ -1,0 +1,108 @@
+dataset:
+  input_features: 10
+  name: abalone
+  num_classes: 28
+  path: data/abalone.csv
+  random_state: 42
+  test_size: 0.2
+export:
+  enabled: true
+  save_dir: models/onnx
+inference:
+  enabled: true
+  output_dir: results/inference
+logging:
+  file: results/abalone_pipeline.log
+  level: INFO
+model:
+  activation: relu
+  batch_size: 64
+  epochs: 2000
+  hidden_neurons: 32
+  learning_rate: 0.0005
+output:
+  results_dir: results
+pruning:
+  accuracy_drop: 60.0
+  activity_threshold: 0.1
+  correlated_neurons: &id001
+  - - 24
+    - 28
+  - - 9
+    - 24
+  - - 4
+    - 9
+  - - 25
+    - 28
+  - - 9
+    - 28
+  - - 4
+    - 24
+  - - 4
+    - 28
+  - - 24
+    - 25
+  - - 9
+    - 25
+  - - 4
+    - 25
+  - - 13
+    - 24
+  - - 13
+    - 25
+  - - 13
+    - 28
+  - - 8
+    - 11
+  - - 18
+    - 27
+  - - 4
+    - 13
+  - - 9
+    - 13
+  - - 11
+    - 27
+  - - 16
+    - 28
+  - - 9
+    - 16
+  - - 0
+    - 14
+  correlation_results:
+    correlated_neurons: *id001
+    insensitive_neurons:
+    - 2
+    - 6
+    - 15
+    - 29
+    low_activity_neurons: []
+  correlation_threshold: 0.8
+  enabled: true
+  final_accuracy: 25.598086124401913
+  insensitive_neurons: []
+  low_activity_neurons:
+  - 2
+  - 29
+  - 6
+  - 15
+  original_hidden_neurons: 32
+  pruned_hidden_neurons: 28
+  pruned_indices:
+  - 2
+  - 29
+  - 6
+  - 15
+  save_dir: models/pruned
+  sensitivity_threshold: 0.1
+  validation:
+    accuracy_weight: 1.0
+    batch_size: 64
+    max_accuracy_drop: 0.03
+    max_neurons_pruned: null
+    min_accuracy: 0.9
+    require_min_neurons: 8
+    size_weight: 0.0
+    validation_strategy: single
+training:
+  enabled: true
+  save_dir: models/original

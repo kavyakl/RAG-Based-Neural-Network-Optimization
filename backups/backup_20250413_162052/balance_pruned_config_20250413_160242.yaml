@@ -1,0 +1,63 @@
+dataset:
+  input_features: 4
+  model_path: models/balance
+  name: balance
+  num_classes: 3
+  path: data/balance.csv
+export:
+  edge_impulse:
+    enabled: true
+    project_id: 669207
+  enabled: true
+  onnx_dir: models/onnx
+  original_model_dir: models/original
+  pruned_model_dir: models/pruned
+  save_dir: models/onnx
+inference:
+  batch_size: 32
+  enabled: true
+model:
+  activation: relu
+  hidden_neurons: 24
+  model_save_path: models/balance
+output:
+  results_dir: results
+  save_dir: models/pruned
+pruning:
+  accuracy_drop: 0.05
+  activity_threshold: 0.1
+  correlated_neurons: &id001
+  - - 12
+    - 23
+  correlation_results:
+    correlated_neurons: *id001
+    insensitive_neurons:
+    - 5
+    low_activity_neurons: []
+  correlation_threshold: 0.8
+  enabled: true
+  final_accuracy: 91.2
+  low_activity_neurons:
+  - 5
+  original_hidden_neurons: 24
+  pruned: false
+  pruned_hidden_neurons: 23
+  pruned_indices:
+  - 5
+  save_dir: models/pruned
+  sensitivity_threshold: 0.01
+  validation:
+    accuracy_weight: 1.0
+    batch_size: 3
+    max_accuracy_drop: 0.05
+    max_neurons_pruned: 18
+    min_accuracy: 0.85
+    require_min_neurons: 6
+    size_weight: 0.0
+    validation_strategy: batch
+training:
+  batch_size: 32
+  enabled: true
+  epochs: 1000
+  learning_rate: 0.001
+  save_dir: models/original

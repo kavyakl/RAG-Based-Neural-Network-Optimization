@@ -1,0 +1,59 @@
+dataset:
+  input_features: 4
+  model_path: models/original/relu/balance
+  name: balance
+  num_classes: 3
+  path: models/original/relu/balance
+  data_path: data/balance.csv
+  model_dir: models/balance
+  target_column: class
+
+export:
+  edge_impulse:
+    enabled: false
+    project_id: 669207
+  enabled: false
+  onnx_dir: models/onnx
+  original_model_dir: models/original
+  pruned_model_dir: models/pruned
+  save_dir: models/pruned/relu
+
+inference:
+  batch_size: 32
+  enabled: true
+  output_dir: results/inference/relu
+
+model:
+  activation: relu
+  hidden_neurons: 20
+  input_features: 4
+  model_save_path: models/balance
+
+output:
+  results_dir: results
+  save_dir: models/pruned/relu
+
+pruning:
+  accuracy_drop: 0.05
+  activity_threshold: 0.2
+  correlation_threshold: 0.7
+  enabled: true
+  pruned: false
+  save_dir: models/pruned/relu
+  sensitivity_threshold: 0.05
+  validation:
+    accuracy_weight: 1.0
+    batch_size: 3
+    max_accuracy_drop: 0.15
+    min_accuracy: 0.80
+    require_min_neurons: 6
+    size_weight: 0.0
+    target_pruning_rate: 0.6
+    validation_strategy: batch
+
+training:
+  batch_size: 32
+  enabled: true
+  epochs: 1000
+  learning_rate: 0.001
+  save_dir: models/original/relu

@@ -1,0 +1,21 @@
+Backup created on: 2025-04-14 14:21:26.780111
+Original directory: /Users/kavyakalyanam/Library/CloudStorage/OneDrive-UniversityofSouthFlorida/Kavya_work/PHD_stuff/Problem_3/code/Experiment_6/neural_network_optimization_tagged_10_apr
+Backup contents:
+- src/ (source code)
+- scripts/ (pipeline scripts)
+- config/ (configuration files)
+- configs/ (additional configurations)
+- Various utility scripts and documentation
+
+Excluded directories:
+- .venv/ (Python virtual environment)
+- .vscode/ (VS Code settings)
+- .cursor/ (Cursor IDE settings)
+- .dist/ (Distribution files)
+- backups/ (Previous backups)
+- logs/ (Log files)
+- models/ (Generated models)
+- results/ (Generated results)
+- data/ (Dataset files)
+- python-sdk/ (SDK files)
+- reports/ (Generated reports)

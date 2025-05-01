@@ -1,0 +1,9 @@
+# Export settings
+export:
+  run_onnx_export: true
+  run_edge_impulse_export: true
+  input_shape: [1, 21]  # [batch_size, num_features]
+  opset_version: 11
+  dynamic_axes:
+    input: {0: 'batch_size'}
+    output: {0: 'batch_size'} 

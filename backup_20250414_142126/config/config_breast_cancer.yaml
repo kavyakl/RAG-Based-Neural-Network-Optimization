@@ -1,0 +1,55 @@
+dataset:
+  input_features: 30
+  name: breast_cancer
+  num_classes: 2
+  data_path: data/breast_cancer.csv
+  target_column: Diagnosis
+
+model:
+  activation: relu
+  hidden_neurons: 16
+  base_dir: models/original/relu/breast_cancer
+  
+training:
+  batch_size: 32
+  enabled: true
+  epochs: 1000
+  learning_rate: 0.001
+  save_dir: models/original/relu/breast_cancer
+
+inference:
+  batch_size: 32
+  enabled: true
+  output_dir: results/breast_cancer/relu/inference
+
+pruning:
+  enabled: true
+  pruned: false
+  accuracy_drop: 0.05
+  activity_threshold: 0.1
+  correlation_threshold: 0.8
+  sensitivity_threshold: 0.01
+  save_dir: models/pruned/relu/breast_cancer
+  validation:
+    accuracy_weight: 1.0
+    batch_size: 3
+    max_accuracy_drop: 0.05
+    max_neurons_pruned: 8
+    min_accuracy: 0.85
+    require_min_neurons: 6
+    size_weight: 0.0
+    target_pruning_rate: 0.6
+    validation_strategy: batch
+
+export:
+  enabled: true
+  edge_impulse:
+    enabled: false
+    project_id: 669207
+  enable_onnx: true
+  onnx_dir: models/onnx
+  original_model_dir: models/original
+  pruned_model_dir: models/pruned
+
+output:
+  results_dir: results/breast_cancer/relu

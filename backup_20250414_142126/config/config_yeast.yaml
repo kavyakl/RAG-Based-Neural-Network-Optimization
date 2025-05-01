@@ -1,0 +1,51 @@
+dataset:
+  input_features: 8
+  name: yeast
+  num_classes: 10
+  data_path: data/yeast.csv
+
+model:
+  activation: relu
+  hidden_neurons: 32
+  base_dir: models/yeast/relu
+  
+training:
+  batch_size: 32
+  enabled: true
+  epochs: 1000
+  learning_rate: 0.001
+  save_dir: models/yeast/relu/original
+
+inference:
+  batch_size: 32
+  enabled: true
+  output_dir: results/yeast/relu/inference
+
+pruning:
+  enabled: true
+  pruned: false
+  accuracy_drop: 0.05
+  activity_threshold: 0.1
+  correlation_threshold: 0.8
+  sensitivity_threshold: 0.01
+  save_dir: models/yeast/relu/pruned
+  validation:
+    accuracy_weight: 1.0
+    batch_size: 3
+    max_accuracy_drop: 0.05
+    max_neurons_pruned: 8
+    min_accuracy: 0.85
+    require_min_neurons: 6
+    size_weight: 0.0
+    target_pruning_rate: 0.6
+    validation_strategy: batch
+
+export:
+  enabled: true
+  edge_impulse:
+    enabled: true
+    project_id: 669207
+  onnx_dir: models/yeast/relu/onnx
+
+output:
+  results_dir: results/yeast/relu
