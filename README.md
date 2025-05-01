@@ -85,7 +85,3 @@ This pipeline builds upon foundational work in model pruning, neural architectur
 📘 Coming Soon
 	•	A blog post explaining how this project connects RAG-based log analysis with deployment-aware neural optimization.
 	•	Scripts for Arduino MKR1000 inference with benchmark logs.
-
----
-
-Let me know when your repo is up — I can help you write the repo description, topics/tags, and a short email to Daniel linking it. Want that next?
