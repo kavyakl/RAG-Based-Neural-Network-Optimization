@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/kavyakalyanam/Library/CloudStorage/OneDrive-UniversityofSouthFlorida/Kavya_work/PHD_stuff/Problem_3/code/Experiment_4/neural_network_optimization",
+      "program": "/Users/kavyakalyanam/Library/CloudStorage/OneDrive-UniversityofSouthFlorida/Kavya_work/PHD_stuff/Problem_3/code/Experiment_4/neural_network_optimization/build/Debug/outDebug"
+    }
+  ]
+}

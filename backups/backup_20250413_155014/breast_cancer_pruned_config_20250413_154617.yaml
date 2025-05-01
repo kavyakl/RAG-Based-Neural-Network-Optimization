@@ -1,0 +1,83 @@
+dataset:
+  input_features: 30
+  model_path: models/breast_cancer
+  name: breast_cancer
+  num_classes: 2
+  path: data/breast_cancer.csv
+export:
+  edge_impulse:
+    enabled: true
+    project_id: 669207
+  enabled: true
+  onnx_dir: models/onnx
+  original_model_dir: models/original
+  pruned_model_dir: models/pruned
+  save_dir: models/onnx
+inference:
+  batch_size: 32
+  enabled: true
+model:
+  activation: tanh
+  hidden_neurons: 24
+  model_save_path: models/breast_cancer
+output:
+  results_dir: results
+  save_dir: models/pruned
+pruning:
+  accuracy_drop: 0.05
+  activity_threshold: 0.1
+  correlated_neurons: &id001
+  - - 16
+    - 20
+  - - 17
+    - 20
+  - - 12
+    - 20
+  - - 20
+    - 22
+  - - 2
+    - 14
+  - - 18
+    - 20
+  - - 3
+    - 20
+  - - 2
+    - 15
+  - - 4
+    - 20
+  - - 0
+    - 2
+  - - 0
+    - 14
+  correlation_results:
+    correlated_neurons: *id001
+    insensitive_neurons:
+    - 1
+    low_activity_neurons: []
+  correlation_threshold: 0.8
+  enabled: true
+  final_accuracy: 98.24561403508771
+  low_activity_neurons:
+  - 1
+  original_hidden_neurons: 24
+  pruned: false
+  pruned_hidden_neurons: 23
+  pruned_indices:
+  - 1
+  save_dir: models/pruned
+  sensitivity_threshold: 0.01
+  validation:
+    accuracy_weight: 1.0
+    batch_size: 3
+    max_accuracy_drop: 0.05
+    max_neurons_pruned: 18
+    min_accuracy: 0.85
+    require_min_neurons: 6
+    size_weight: 0.0
+    validation_strategy: batch
+training:
+  batch_size: 32
+  enabled: true
+  epochs: 1000
+  learning_rate: 0.001
+  save_dir: models/original

@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+{
+  "rules": [
+    {
+      "description": "Offer to help refactor, generate tests, or benchmark results if major changes are made."
+    },
+    {
+      "description": "When I ask for help debugging or understanding, don’t just give the fix — explain the failure cause too."
+    },
+    {
+  "description": "When modifying existing code, never remove or change working logic unless explicitly asked. 
+Preserve original behavior. If a fix or enhancement is needed, add it alongside or behind a feature flag, logging statement, or fallback."
+}
+  ]
+}

@@ -1,0 +1,58 @@
+{
+    "dataset_name": "balance",
+    "original_hidden_neurons": 24,
+    "pruned_hidden_neurons": 23,
+    "neurons_pruned": 1,
+    "correlation_threshold": 0.8,
+    "activity_threshold": 0.1,
+    "sensitivity_threshold": 0.01,
+    "pruned_indices": [
+        5
+    ],
+    "correlation_results": {
+        "correlated_neurons": [
+            [
+                12,
+                23
+            ]
+        ],
+        "insensitive_neurons": [
+            5
+        ],
+        "low_activity_neurons": []
+    },
+    "low_activity_indices": [
+        5
+    ],
+    "insensitive_indices": [
+        5
+    ],
+    "sensitivity_scores": [
+        0.4508584188170988,
+        0.6309857506593208,
+        0.9999999999197553,
+        0.682706916101584,
+        0.5685750617904274,
+        0.0,
+        0.7386438906211653,
+        0.56542239902321,
+        0.7643684412374298,
+        0.7168676525972539,
+        0.8527494721447253,
+        0.5126327494898596,
+        0.6908338646226664,
+        0.7776681347834034,
+        0.5466296983761257,
+        0.642058173778477,
+        0.4483493102061342,
+        0.8054348840545464,
+        0.45092073119226866,
+        0.8099498193172439,
+        0.4797521429711584,
+        0.6498858861061492,
+        0.27896261008689505,
+        0.5572212668255169
+    ],
+    "activation": "relu",
+    "num_features": 4
+}

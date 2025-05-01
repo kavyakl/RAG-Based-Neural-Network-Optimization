@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "path": "models/original/breast_cancer/breast_cancer_original_24_20250413_154617/breast_cancer_model.pth",
+    "info": {
+      "accuracy": 98.24561403508771,
+      "inference_time": 0.0,
+      "model_size": 769.0,
+      "num_layers": 2,
+      "hidden_neurons": 24,
+      "total_parameters": 769,
+      "epochs": 1000,
+      "learning_rate": 0.001,
+      "dataset_name": "breast_cancer"
+    }
+  }
+]

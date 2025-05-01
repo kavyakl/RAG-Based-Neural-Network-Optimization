@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "path": "models/original/balance/balance_original_24_20250413_135202/balance_model.pth",
+    "info": {
+      "accuracy": 91.2,
+      "inference_time": 0.0,
+      "model_size": 195.0,
+      "num_layers": 2,
+      "hidden_neurons": 24,
+      "total_parameters": 195,
+      "epochs": 1000,
+      "learning_rate": 0.001,
+      "dataset_name": "balance"
+    }
+  },
+  {
+    "id": 1,
+    "path": "models/original/breast_cancer/breast_cancer_original_24_20250413_140027/breast_cancer_model.pth",
+    "info": {
+      "accuracy": 97.36842105263158,
+      "inference_time": 0.0,
+      "model_size": 769.0,
+      "num_layers": 2,
+      "hidden_neurons": 24,
+      "total_parameters": 769,
+      "epochs": 1000,
+      "learning_rate": 0.001,
+      "dataset_name": "breast_cancer"
+    }
+  },
+  {
+    "id": 2,
+    "path": "models/original/customers/customers_original_24_20250413_140846/customers_model.pth",
+    "info": {
+      "accuracy": 80.68181818181817,
+      "inference_time": 0.0,
+      "model_size": 267.0,
+      "num_layers": 2,
+      "hidden_neurons": 24,
+      "total_parameters": 267,
+      "epochs": 1000,
+      "learning_rate": 0.001,
+      "dataset_name": "customers"
+    }
+  },
+  {
+    "id": 3,
+    "path": "models/original/digits_binary_digit0/digits_binary_digit0_original_24_20250413_140858/digits_binary_digit0_model.pth",
+    "info": {
+      "accuracy": 100.0,
+      "inference_time": 0.0,
+      "model_size": 1585.0,
+      "num_layers": 2,
+      "hidden_neurons": 24,
+      "total_parameters": 1585,
+      "epochs": 1000,
+      "learning_rate": 0.001,
+      "dataset_name": "digits_binary_digit0"
+    }
+  }
+]

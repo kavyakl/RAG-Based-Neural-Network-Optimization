@@ -1,0 +1,7 @@
+{
+    "num_features": 30,
+    "output_classes": 2,
+    "hidden_neurons": 24,
+    "activation": "relu",
+    "dataset_name": "breast_cancer"
+}

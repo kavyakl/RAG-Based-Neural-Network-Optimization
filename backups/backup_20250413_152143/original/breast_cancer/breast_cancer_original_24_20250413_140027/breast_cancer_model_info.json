@@ -1,0 +1,10 @@
+{
+    "model_type": "original",
+    "dataset": "breast_cancer",
+    "hidden_neurons": 24,
+    "activation": "relu",
+    "timestamp": "20250413_140027",
+    "total_parameters": 769,
+    "input_features": 30,
+    "output_classes": 1
+}

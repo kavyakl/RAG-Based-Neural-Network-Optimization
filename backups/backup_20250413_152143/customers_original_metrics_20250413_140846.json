@@ -1,0 +1,18 @@
+{
+    "train_accuracy": 69.88636363636364,
+    "test_accuracy": 80.68181818181817,
+    "num_features": 7,
+    "num_classes": 3,
+    "hidden_neurons": 24,
+    "epochs": 1000,
+    "learning_rate": 0.001,
+    "activation": "relu",
+    "model_size": 267,
+    "model_dir": "models/original/customers/customers_original_24_20250413_140846",
+    "model_path": "models/original/customers/customers_original_24_20250413_140846/customers_model.pth",
+    "train_data_path": "models/original/customers/customers_train_data.npz",
+    "test_data_path": "models/original/customers/customers_test_data.npz",
+    "timestamp": "20250413_140846",
+    "dataset": "customers",
+    "model_type": "original"
+}

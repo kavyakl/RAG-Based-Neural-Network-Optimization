@@ -1,0 +1,46 @@
+{
+  "original_model": {
+    "raspberry-pi-4": {
+      "device": "raspberry-pi-4",
+      "inference_time_ms": 1,
+      "rom_size_bytes": 37184,
+      "ram_usage_bytes": 3371,
+      "mcu_supported": true,
+      "mcu_support_error": null,
+      "description": "Estimate for a Cortex-A72, x86 or other mid-range microprocessor running at 1.5GHz",
+      "device_inference_time_ms": 1,
+      "device_rom_size_bytes": 2772.0,
+      "device_supported": true
+    },
+    "raspberry-pi-rp2040": {
+      "device": "raspberry-pi-rp2040",
+      "inference_time_ms": 10,
+      "rom_size_bytes": 37184,
+      "ram_usage_bytes": 3371,
+      "mcu_supported": true,
+      "mcu_support_error": null
+    }
+  },
+  "pruned_model": {
+    "raspberry-pi-4": {
+      "device": "raspberry-pi-4",
+      "inference_time_ms": 1,
+      "rom_size_bytes": 37152,
+      "ram_usage_bytes": 3371,
+      "mcu_supported": true,
+      "mcu_support_error": null,
+      "description": "Estimate for a Cortex-A72, x86 or other mid-range microprocessor running at 1.5GHz",
+      "device_inference_time_ms": 1,
+      "device_rom_size_bytes": 2740.0,
+      "device_supported": true
+    },
+    "raspberry-pi-rp2040": {
+      "device": "raspberry-pi-rp2040",
+      "inference_time_ms": 5,
+      "rom_size_bytes": 37152,
+      "ram_usage_bytes": 3371,
+      "mcu_supported": true,
+      "mcu_support_error": null
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "model_type": "original",
+    "dataset": "customers",
+    "hidden_neurons": 24,
+    "activation": "relu",
+    "timestamp": "20250413_140846",
+    "total_parameters": 267,
+    "input_features": 7,
+    "output_classes": 3
+}

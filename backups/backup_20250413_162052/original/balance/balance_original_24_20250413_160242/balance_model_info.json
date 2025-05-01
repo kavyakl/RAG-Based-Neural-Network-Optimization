@@ -1,0 +1,10 @@
+{
+    "model_type": "original",
+    "dataset": "balance",
+    "hidden_neurons": 24,
+    "activation": "relu",
+    "timestamp": "20250413_160242",
+    "total_parameters": 195,
+    "input_features": 4,
+    "output_classes": 3
+}

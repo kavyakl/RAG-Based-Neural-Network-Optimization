@@ -1,0 +1,7 @@
+{
+    "num_features": 7,
+    "output_classes": 3,
+    "hidden_neurons": 24,
+    "activation": "relu",
+    "dataset_name": "customers"
+}

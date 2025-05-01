@@ -1,0 +1,26 @@
+{
+    "num_features": 4,
+    "output_classes": 3,
+    "hidden_neurons": 24,
+    "activation": "relu",
+    "dataset_name": "balance",
+    "input_features": 4,
+    "pruned_indices": [
+        23
+    ],
+    "correlation_results": {
+        "correlated_neurons": [],
+        "insensitive_neurons": [
+            23
+        ],
+        "low_activity_neurons": [
+            23
+        ]
+    },
+    "low_activity_neurons": [
+        23
+    ],
+    "correlated_neurons": [],
+    "original_hidden_neurons": 24,
+    "pruned_hidden_neurons": 23
+}

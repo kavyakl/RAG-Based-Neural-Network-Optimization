@@ -1,0 +1,74 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+✅ Fix Strategy: Make Each Stage “Defensive & Self-Aware”
+
+Here’s a concrete checklist you can follow:
+
+⸻
+
+1. Add Validation at Stage Boundaries
+
+Before a script loads or processes an input from another stage, add assertions or checks like:
+
+assert model.hidden_neurons == config["model"]["hidden_neurons"], "Mismatch in expected model size"
+assert output.shape[-1] == num_classes, "Output shape mismatch"
+
+Also validate config expectations:
+
+required_keys = ["activation", "hidden_neurons"]
+for key in required_keys:
+    assert key in config["model"], f"Missing config key: {key}"
+
+
+
+⸻
+
+2. Use Intermediate Logging & Snapshots
+
+At the end of each step (training, pruning, export), write a meta.json file:
+
+{
+  "model_type": "pruned",
+  "hidden_neurons": 8,
+  "activation": "tanh",
+  "output_shape": [1, 3],
+  "compatible_with": ["onnx", "ei"]
+}
+
+Then each following step reads this and validates against it.
+
+⸻
+
+3. Fail Fast, Verbosely
+
+Instead of silent breaks, use logging and explicit errors:
+
+if not os.path.exists(model_path):
+    raise FileNotFoundError(f"Expected model at {model_path}, but not found.")
+
+
+
+⸻
+
+4. Standardize Output Formats
+
+Make sure all outputs from each module follow a strict schema:
+	•	Model names: dataset_modeltype.onnx
+	•	JSON results: always include model_name, accuracy, num_params, etc.
+	•	Output shapes are consistent.
+
+⸻
+
+5. Write a Sanity Checker Script
+
+Create a script like verify_pipeline_integrity.py:
+
+# Checks: do all configs have required fields?
+# Do all models in models/pruned match expected ONNX count?
+# Do profiling JSONs include all metrics?
+
+# Run this before running the full pipeline
+

@@ -1,0 +1,18 @@
+{
+    "train_accuracy": 98.9010989010989,
+    "test_accuracy": 98.24561403508771,
+    "num_features": 30,
+    "num_classes": 2,
+    "hidden_neurons": 24,
+    "epochs": 1000,
+    "learning_rate": 0.001,
+    "activation": "tanh",
+    "model_size": 769,
+    "model_dir": "models/original/breast_cancer/breast_cancer_original_24_20250413_154617",
+    "model_path": "models/original/breast_cancer/breast_cancer_original_24_20250413_154617/breast_cancer_model.pth",
+    "train_data_path": "models/original/breast_cancer/breast_cancer_train_data.npz",
+    "test_data_path": "models/original/breast_cancer/breast_cancer_test_data.npz",
+    "timestamp": "20250413_154617",
+    "dataset": "breast_cancer",
+    "model_type": "original"
+}

@@ -1,0 +1,114 @@
+{
+    "num_features": 30,
+    "output_classes": 2,
+    "hidden_neurons": 24,
+    "activation": "tanh",
+    "dataset_name": "breast_cancer",
+    "input_features": 30,
+    "pruned_indices": [
+        1
+    ],
+    "correlation_results": {
+        "correlated_neurons": [
+            [
+                16,
+                20
+            ],
+            [
+                17,
+                20
+            ],
+            [
+                12,
+                20
+            ],
+            [
+                20,
+                22
+            ],
+            [
+                2,
+                14
+            ],
+            [
+                18,
+                20
+            ],
+            [
+                3,
+                20
+            ],
+            [
+                2,
+                15
+            ],
+            [
+                4,
+                20
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                0,
+                14
+            ]
+        ],
+        "insensitive_neurons": [
+            1
+        ],
+        "low_activity_neurons": []
+    },
+    "low_activity_neurons": [
+        1
+    ],
+    "correlated_neurons": [
+        [
+            16,
+            20
+        ],
+        [
+            17,
+            20
+        ],
+        [
+            12,
+            20
+        ],
+        [
+            20,
+            22
+        ],
+        [
+            2,
+            14
+        ],
+        [
+            18,
+            20
+        ],
+        [
+            3,
+            20
+        ],
+        [
+            2,
+            15
+        ],
+        [
+            4,
+            20
+        ],
+        [
+            0,
+            2
+        ],
+        [
+            0,
+            14
+        ]
+    ],
+    "original_hidden_neurons": 24,
+    "pruned_hidden_neurons": 23
+}

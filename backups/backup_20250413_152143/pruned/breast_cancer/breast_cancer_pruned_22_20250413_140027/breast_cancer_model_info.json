@@ -1,0 +1,69 @@
+{
+    "num_features": 30,
+    "output_classes": 2,
+    "hidden_neurons": 24,
+    "activation": "relu",
+    "dataset_name": "breast_cancer",
+    "input_features": 30,
+    "pruned_indices": [
+        9,
+        11
+    ],
+    "correlation_results": {
+        "correlated_neurons": [
+            [
+                10,
+                18
+            ],
+            [
+                10,
+                21
+            ],
+            [
+                3,
+                21
+            ],
+            [
+                18,
+                21
+            ],
+            [
+                3,
+                18
+            ]
+        ],
+        "insensitive_neurons": [
+            9,
+            11
+        ],
+        "low_activity_neurons": []
+    },
+    "low_activity_neurons": [
+        9,
+        11
+    ],
+    "correlated_neurons": [
+        [
+            10,
+            18
+        ],
+        [
+            10,
+            21
+        ],
+        [
+            3,
+            21
+        ],
+        [
+            18,
+            21
+        ],
+        [
+            3,
+            18
+        ]
+    ],
+    "original_hidden_neurons": 24,
+    "pruned_hidden_neurons": 22
+}
