@@ -1,21 +1,21 @@
 # Neural Network Optimization & Deployment Pipeline
 
-This project was developed as part of a research workflow focused on neural network optimization for edge ML deployment. It integrates **training log analysis**, **model pruning with linear regression**, **quantization**, and **ONNX export** for deployment on resource-constrained devices such as Arduino and Edge Impulse-compatible platforms.
+> An all-in-one research and deployment framework for lightweight neural networks—combining PyTorch, ONNX, and microcontroller deployment with automated RAG + LLM-powered analysis.
 
-The pipeline is designed to aid **automated model comparison** across activation functions, compression techniques, and deployment targets.
+## 🔍 Why This Project Stands Out
 
----
+- 🔁 **Closed-loop Optimization**: Train ➜ Prune ➜ Quantize ➜ Analyze ➜ Deploy ➜ Repeat  
+- 🧠 **LLM + RAG-Enhanced Insights**: Let AI explain what your models are doing  
+- ⚡ **Edge-Ready**: Integrates directly with Edge Impulse and Arduino workflows  
+- 📊 **Smart Profiling**: Latency, size, accuracy, activation-wise comparison, all automated  
+- 🔧 **Highly Modular**: Drop in new models, datasets, or pruning strategies effortlessly.
+- It integrates:
+- Activation-aware training,
+- Linear regression-based structured pruning,
+- ONNX conversion,
+- Edge Impulse deployment,
+- And intelligent analysis pipelines powered by large language models.
 
-## 🔍 Features
-
-- 🔧 **Structural pruning** with weight rebalancing using linear regression
-- 🧠 **Training with multiple activation functions** (ReLU, Tanh, Sigmoid, etc.)
-- 📊 **Smart analysis** of training logs and pruning effects
-- 📦 **ONNX export** and Edge Impulse integration for microcontroller deployment
-- ⚙️ **Profiling and inference scripts** to compare original and pruned models
-- 🛠️ **Deployment-ready inference** with micro-benchmarking support
-
----
 
 ## 🗂 Project Structure
 
