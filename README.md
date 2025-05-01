@@ -1,9 +1,3 @@
-Awesome — you’re almost there. I’ll now upgrade this into a polished, job-ready README that’s clear, professional, and tailored for showing your work to Legion (especially Daniel). This version improves formatting, adds a “Features” section, emphasizes your research angle, and includes a placeholder for results and blog links.
-
-⸻
-
-
-
 # Neural Network Optimization & Deployment Pipeline
 
 This project was developed as part of a research workflow focused on neural network optimization for edge ML deployment. It integrates **training log analysis**, **model pruning with linear regression**, **quantization**, and **ONNX export** for deployment on resource-constrained devices such as Arduino and Edge Impulse-compatible platforms.
