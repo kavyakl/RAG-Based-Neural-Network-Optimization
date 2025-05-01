@@ -1,6 +1,6 @@
-# Neural Network Optimization Pipeline
+# Neural Network Optimization Pipeline-
 
-This project implements a comprehensive neural network optimization pipeline for model pruning, quantization, and deployment to edge devices.
+This project was developed as part of a neural network optimization research workflow, aiming to provide insight-driven model pruning and deployment for edge ML use cases. It integrates training log processing, model compression, ONNX conversion, and deployment compatibility for platforms like Edge Impulse
 
 ## Overview
 
